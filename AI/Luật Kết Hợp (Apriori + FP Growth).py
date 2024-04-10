@@ -1,3 +1,7 @@
+#https://laptrinhthidau.blogspot.com/2024/04/luat-ket-hop-apriopi.html
+
+#NOTE: CODE was not checked
+
 import pandas as pd
 from mlxtend.preprocessing import TransactionEncoder
 
