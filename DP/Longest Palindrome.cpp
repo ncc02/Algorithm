@@ -1,4 +1,4 @@
-//UVA 10192 - Vacation
+//UVA 11151 Longest Palindrome
 #include<bits/stdc++.h>
 #define FOR(i, a, b) for(int i=a; i<=b; i++)
 using namespace std;
@@ -18,15 +18,22 @@ int DP(){
 	return F[n][m];
 }
 
+string rev(string s){
+	string x = "";
+	for(int i=0; s[i]; i++)
+		x = s[i] + x;
+	return x;
+}
 
 int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 	
-	while(getline(cin, a)){
-		if (a=="#") break;
-		getline(cin, b);
+	int t;	cin >> t; getline(cin, a);
+	while(t--){
+		getline(cin, a);
+		b = rev(a);
 		
-		cout<<"Case #"<<++cnt<<": you can visit at most "<<DP()<<" cities.\n";
+		cout<<DP()<<"\n";
 	}
 }
