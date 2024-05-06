@@ -27,6 +27,11 @@ int sum_div(int n) {
 int n;
 
 int32_t main(){
+	
 	cin >> n;
-	cout << sum_div(n);
+	for(int i=1; i<=n; i++){
+		int x;	cin >> x;
+		cout << sum_div(x) <<" ";
+	}
+	
 }
