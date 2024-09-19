@@ -1,30 +1,7 @@
 // Algo in VNOI: https://vnoi.info/wiki/algo/graph-theory/Depth-First-Search-Tree.md#%E1%BB%A9ng-d%E1%BB%A5ng-c%C3%A2y-dfs-trong-b%C3%A0i-to%C3%A1n-t%C3%ACm-kh%E1%BB%9Bp-c%E1%BA%A7u  
-
-
-
 // Problem: http://uva.onlinejudge.org/external/7/796.pdf     
-
-
-
-// Important:
-
-// - Num[u]: index dfs to u
-
-// - Low[u] : index dfs to u (but smallest) 
-
-
-
-// Example:
-
-// - You dfs 1 -> 2 -> 3->4 but can 2->4  (this num[4] is 4, but low[4] is 3) 
-
-
-
 // Fomular: 
-
 // - If (num[v] == low[v]) => (u,v) is bridge
-
-
 
 #include<bits/stdc++.h>
 #define int long long
